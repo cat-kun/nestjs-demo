@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { GirlModule } from './girl/girl.module';
 import { LoginModule } from './login/login.module';
 import { JwtModule } from '@nestjs/jwt';
-import Utils from './utils';
+// import Utils from './utils';
 
 @Module({
   imports: [
@@ -17,6 +17,6 @@ import Utils from './utils';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService, Utils],
+  providers: [AppService],
 })
 export class AppModule {}
